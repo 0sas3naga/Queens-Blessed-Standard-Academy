@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Why Choose Queens Blessed Standard Academy - Discover our unmatched safety, personal mentorship, STEM facilities, and stellar academic training.">
+    <title>Why Choose Us | Queens Blessed Standard Academy</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Contact / Announcement Bar -->
+    <div class="top-info-bar py-2 d-none d-md-block">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-4">
+                    <span><i class="bi bi-mortarboard-fill text-warning me-1"></i> Quality Education for Future
+                        Leaders</span>
+                    <span><i class="bi bi-telephone-fill text-warning me-1"></i> +234 (0) 800 123 4567</span>
+                    <span><i class="bi bi-envelope-fill text-warning me-1"></i> info@queensblessedacademy.edu</span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="badge-admissions"><i class="bi bi-award-fill me-1"></i> Admissions Open
+                        2026/2027</span>
+                    <a href="contactus.html" class="small"><i class="bi bi-clock-fill text-warning me-1"></i> Mon - Fri:
+                        7:30 AM - 4:00 PM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar: LOGO ON THE LEFT, ENROLL NOW ON THE RIGHT, OFFCANVAS ON MOBILE -->
+    <nav class="navbar navbar-expand-lg sticky-top main-navbar" id="mainNavbar">
+        <div class="container-fluid px-lg-5">
+
+            <!-- Left: Logo & School Name -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Mummy school badge.jpg" alt="Queens Blessed Standard Academy Badge" class="brand-logo-img">
+                <div class="brand-text-wrap text-start">
+                    <span class="brand-name">QUEENS BLESSED</span>
+                    <span class="brand-tagline">Standard Academy</span>
+                </div>
+            </a>
+
+            <!-- Mobile Action Cluster -->
+            <div class="d-flex align-items-center gap-2 d-lg-none">
+                <button class="btn btn-enroll-nav btn-sm py-2 px-3" data-bs-toggle="modal"
+                    data-bs-target="#enrollmentModal">
+                    <i class="bi bi-pencil-square"></i>
+                    <span>Enroll</span>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSideNav"
+                    aria-controls="mobileSideNav" aria-label="Open navigation menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Multi-Page Nav Links & Desktop Enroll -->
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="mobileSideNav"
+                aria-labelledby="mobileSideNavLabel">
+
+                <!-- Drawer Header (Mobile) -->
+                <div class="offcanvas-header d-lg-none">
+                    <div class="d-flex align-items-center gap-2" id="mobileSideNavLabel">
+                        <img src="Mummy school badge.jpg" alt="Logo" class="brand-logo-img"
+                            style="width: 44px; height: 44px;">
+                        <div class="brand-text-wrap text-start">
+                            <span class="brand-name text-white fs-6">QUEENS BLESSED</span>
+                            <span class="brand-tagline" style="font-size: 0.68rem;">Standard Academy</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        data-bs-target="#mobileSideNav" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto text-start text-lg-center gap-lg-1 mb-4 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="bi bi-house-door-fill d-lg-none"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">
+                                <i class="bi bi-info-circle-fill d-lg-none"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="academics.html">
+                                <i class="bi bi-book-half d-lg-none"></i>
+                                <span>Academics</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="chooseus.html">
+                                <i class="bi bi-star-fill d-lg-none"></i>
+                                <span>Why Choose Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">
+                                <i class="bi bi-telephone-fill d-lg-none"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-lg-flex justify-content-end">
+                        <button class="btn btn-enroll-nav" data-bs-toggle="modal" data-bs-target="#enrollmentModal">
+                            <i class="bi bi-pencil-square"></i>
+                            <span>Enroll Now</span>
+                        </button>
+                    </div>
+
+                    <div class="mobile-sidebar-footer d-lg-none mt-auto">
+                        <button class="btn btn-enroll-nav w-100 justify-content-center mb-3" data-bs-toggle="modal"
+                            data-bs-target="#enrollmentModal" data-bs-dismiss="offcanvas">
+                            <i class="bi bi-mortarboard-fill"></i> Enroll For 2026/2027
+                        </button>
+                        <div class="d-flex flex-column gap-2">
+                            <div><i class="bi bi-telephone-fill text-warning me-2"></i> +234 (0) 800 123 4567</div>
+                            <div><i class="bi bi-envelope-fill text-warning me-2"></i>
+                                admissions@queensblessedacademy.edu</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <section class="page-header-banner text-center">
+        <div class="container px-lg-5">
+            <h1 class="page-title">Why Choose Queens Blessed</h1>
+            <div class="breadcrumb-custom">
+                <a href="index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a>
+                <span>/</span>
+                <span>Why Choose Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 Key Pillars of Why Choose Us -->
+    <section class="values-section">
+        <div class="container px-lg-5">
+            <div class="text-center mb-5">
+                <span class="section-badge"><i class="bi bi-award-fill"></i> What Sets Us Apart</span>
+                <h2 class="section-title">The Foundation for a Lifetime of Success</h2>
+                <p class="section-subtitle">We combine proven educational methodologies with compassionate mentorship so
+                    every child excels.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-person-heart"></i>
+                        </div>
+                        <h3 class="feature-title">Small Class Sizes & Mentorship</h3>
+                        <p class="feature-desc">With an average pupil-teacher ratio of 12:1, our dedicated instructors
+                            recognize and nurture each child's individual learning style.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Zero-Compromise Security</h3>
+                        <p class="feature-desc">Gated perimeter, security surveillance, strict ID pickup authorization,
+                            and calm serene environment tailored for children.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-trophy-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Proven Academic Excellence</h3>
+                        <p class="feature-desc">Rigorous curriculum that builds deep subject mastery and equips students
+                            to write and excel in external examinations with confidence.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Modern STEM & Computer Suites</h3>
+                        <p class="feature-desc">Interactive science apparatus, coding basics, and digital literacy
+                            embedded directly into everyday learning.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-heart-pulse-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Health Bay & Child Wellness</h3>
+                        <p class="feature-desc">Registered nurses on duty, clean sanitary restrooms, routine health
+                            checks, and quick-response emergency readiness.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h3 class="feature-title">Affordable & Transparent Value</h3>
+                        <p class="feature-desc">World-class standard education made accessible through fair tuition and
+                            flexible termly payment plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Life & Activities Grid -->
+    <section class="academics-section bg-light">
+        <div class="container px-lg-5">
+            <div class="text-center mb-5">
+                <span class="section-badge"><i class="bi bi-dribbble"></i> Student Life & Extracurriculars</span>
+                <h2 class="section-title">Enrichment Beyond the Classroom</h2>
+                <p class="section-subtitle">Developing talents, public speaking skills, fitness, and lifelong
+                    friendships.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="assets/images/hero-sports.jpg" class="card-img-top" alt="Sports and Athletics"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="h5 fw-bold mb-2">Sports & Athletics</h4>
+                            <p class="text-muted small mb-0">Football tournaments, track athletics, relay races, and
+                                recreation park games promoting physical fitness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="assets/images/hero-science.jpg" class="card-img-top" alt="STEM Club and Robotics"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="h5 fw-bold mb-2">Junior STEM Club</h4>
+                            <p class="text-muted small mb-0">Young engineers building working science models, chemical
+                                reactions, and intro computing logic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="assets/images/hero-library.jpg" class="card-img-top" alt="Debate and Literary Society"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="h5 fw-bold mb-2">Debate & Press Club</h4>
+                            <p class="text-muted small mb-0">Weekly speech training, spelling bees, and creative
+                                storytelling that build articulate, courageous speakers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="assets/images/hero-campus.jpg" class="card-img-top" alt="Music and Cultural Society"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="h5 fw-bold mb-2">Music, Arts & Choir</h4>
+                            <p class="text-muted small mb-0">Keyboard training, violin, singing, drama presentations,
+                                and cultural dance celebrations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="about-section">
+        <div class="container px-lg-5">
+            <div class="text-center mb-5">
+                <span class="section-badge"><i class="bi bi-chat-quote-fill"></i> Parent Voices</span>
+                <h2 class="section-title">What Parents Say About Us</h2>
+                <p class="section-subtitle">Real experiences from families whose children have blossomed at Queens
+                    Blessed.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4"
+                        style="background-color: var(--wine-subtle); border-top: 4px solid var(--wine-red) !important;">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted fst-italic mb-4">
+                            "My daughter joined Queens Blessed unable to read letter blends. Within 6 months she was
+                            reading full sentences independently. The dedication of the teachers is phenomenal!"
+                        </p>
+                        <h5 class="fw-bold fs-6 mb-0 text-dark">Mrs. C. Adeleke</h5>
+                        <span class="text-muted small">Parent of Primary 2 Pupil</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4"
+                        style="background-color: var(--wine-subtle); border-top: 4px solid var(--accent-gold) !important;">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted fst-italic mb-4">
+                            "My son received exceptional academic coaching at Queens Blessed. The school gave him deep
+                            subject mastery, discipline, and academic fire that allowed him to excel in all his exams."
+                        </p>
+                        <h5 class="fw-bold fs-6 mb-0 text-dark">Engr. T. Balogun</h5>
+                        <span class="text-muted small">Parent of Junior Secondary Student</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4"
+                        style="background-color: var(--wine-subtle); border-top: 4px solid var(--wine-red) !important;">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted fst-italic mb-4">
+                            "The safety protocols and warmth of the school community give me total peace of mind every
+                            working day. You can see the love the staff have for the children."
+                        </p>
+                        <h5 class="fw-bold fs-6 mb-0 text-dark">Dr. & Mrs. Okafor</h5>
+                        <span class="text-muted small">Parents of Primary Pupils</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission CTA Banner -->
+    <section class="cta-banner-section text-center">
+        <div class="container px-lg-5">
+            <span class="badge-admissions mb-3 d-inline-block"><i class="bi bi-award-fill me-1"></i> Give Your Child The
+                Best Start</span>
+            <h2 class="cta-title">Join The Queens Blessed Family Today</h2>
+            <p class="cta-desc mx-auto">Admissions ongoing across all classes. Enroll your child today for a brighter
+                future.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button class="btn btn-cta-gold" data-bs-toggle="modal" data-bs-target="#enrollmentModal">
+                    <i class="bi bi-pencil-fill"></i> Enroll Now
+                </button>
+                <a href="contactus.html" class="btn btn-hero-secondary">
+                    <i class="bi bi-telephone-fill"></i> Contact Admissions Desk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container px-lg-5">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="Mummy school badge.jpg" alt="Logo" class="rounded-circle border border-white"
+                            style="width: 46px; height: 46px; object-fit: cover;">
+                        <div>
+                            <div class="footer-brand-title">QUEENS BLESSED</div>
+                            <div class="text-uppercase small"
+                                style="color: var(--accent-gold-light); font-size: 0.75rem; letter-spacing: 1px;">
+                                Standard Academy</div>
+                        </div>
+                    </div>
+                    <p class="footer-about">
+                        Committed to providing holistic foundational education, moral excellence, and personal
+                        mentorship for every learner.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Pages</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+                        <li><a href="aboutus.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+                        <li><a href="academics.html"><i class="bi bi-chevron-right small"></i> Academics</a></li>
+                        <li><a href="chooseus.html"><i class="bi bi-chevron-right small"></i> Why Choose Us</a></li>
+                        <li><a href="contactus.html"><i class="bi bi-chevron-right small"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Classes</h5>
+                    <ul class="footer-links">
+                        <li><a href="academics.html#kindergarten"><i class="bi bi-chevron-right small"></i> Kindergarten
+                                1 & 2</a></li>
+                        <li><a href="academics.html#primary"><i class="bi bi-chevron-right small"></i> Lower Primary (1
+                                - 3)</a></li>
+                        <li><a href="academics.html#primary"><i class="bi bi-chevron-right small"></i> Upper Primary (4
+                                - 6)</a></li>
+                        <li><a href="academics.html#jss"><i class="bi bi-chevron-right small"></i> JSS 1 (Basic 7)</a>
+                        </li>
+                        <li><a href="academics.html#jss"><i class="bi bi-chevron-right small"></i> JSS 2 & 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Contact Admissions</h5>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Queens Blessed Standard Academy Campus, Nigeria</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+234 (0) 800 123 4567 / +234 803 000 0000</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>admissions@queensblessedacademy.edu</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <div>
+                    &copy; <span id="currentYear">2026</span> Queens Blessed Standard Academy. All Rights Reserved.
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="index.html" class="text-white-50 text-decoration-none">Back to Home <i
+                            class="bi bi-arrow-up-circle ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enrollment Modal -->
+    <div class="modal fade" id="enrollmentModal" tabindex="-1" aria-labelledby="enrollmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-wine">
+                    <div>
+                        <h4 class="modal-title font-heading fw-bold" id="enrollmentModalLabel">
+                            <i class="bi bi-mortarboard-fill me-2"></i> Enroll Your Child
+                        </h4>
+                        <p class="small text-white-50 mb-0">Fill in the admission inquiry form and our school registrar
+                            will contact you promptly.</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enrollmentForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Parent / Guardian Full Name *</label>
+                                <input type="text" class="form-control" placeholder="e.g. Dr. / Mr. / Mrs. Adeleke"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" placeholder="e.g. 0801 234 5678" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" placeholder="parent@email.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Child / Pupil Full Name *</label>
+                                <input type="text" class="form-control" placeholder="Candidate's Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Child's Date of Birth *</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Class Applying For *</label>
+                                <select class="form-select" required>
+                                    <option value="" selected disabled>Select Target Class</option>
+                                    <optgroup label="Early Years">
+                                        <option value="creche">Creche / Playgroup</option>
+                                        <option value="kg1">Kindergarten 1 (KG 1)</option>
+                                        <option value="kg2">Kindergarten 2 (KG 2)</option>
+                                    </optgroup>
+                                    <optgroup label="Primary School">
+                                        <option value="pri1">Primary 1 (Basic 1)</option>
+                                        <option value="pri2">Primary 2 (Basic 2)</option>
+                                        <option value="pri3">Primary 3 (Basic 3)</option>
+                                        <option value="pri4">Primary 4 (Basic 4)</option>
+                                        <option value="pri5">Primary 5 (Basic 5)</option>
+                                        <option value="pri6">Primary 6 (Basic 6)</option>
+                                    </optgroup>
+                                    <optgroup label="Junior Secondary School">
+                                        <option value="jss1">JSS 1 (Basic 7)</option>
+                                        <option value="jss2">JSS 2 (Basic 8)</option>
+                                        <option value="jss3">JSS 3 (Basic 9)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Special Talents, Interests or Remarks</label>
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Tell us about your child's personality, interests, or any specific learning requirements..."></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-submit-enroll py-3">
+                                    <i class="bi bi-check-circle-fill me-2"></i> Submit Enrollment Application
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('mainNavbar');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 30) navbar.classList.add('scrolled');
+                else navbar.classList.remove('scrolled');
+            });
+            const yearElem = document.getElementById('currentYear');
+            if (yearElem) yearElem.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+
+</html>

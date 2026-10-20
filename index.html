@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Queens Blessed Standard Academy - Providing exceptional, holistic basic education, character building, and academic excellence.">
+    <title>Queens Blessed Standard Academy | Excellence in Education</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="home">
+
+    <!-- Top Contact / Announcement Bar -->
+    <div class="top-info-bar py-2 d-none d-md-block">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-4">
+                    <span><i class="bi bi-mortarboard-fill text-warning me-1"></i> Quality Education for Future
+                        Leaders</span>
+                    <span><i class="bi bi-telephone-fill text-warning me-1"></i> +234 (0) 800 123 4567</span>
+                    <span><i class="bi bi-envelope-fill text-warning me-1"></i> info@queensblessedacademy.edu</span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="badge-admissions"><i class="bi bi-award-fill me-1"></i> Admissions Open
+                        2026/2027</span>
+                    <a href="contactus.html" class="small"><i class="bi bi-clock-fill text-warning me-1"></i> Mon - Fri:
+                        7:30 AM - 4:00 PM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar: LOGO ON THE LEFT, ENROLL NOW ON THE RIGHT, OFFCANVAS ON MOBILE -->
+    <nav class="navbar navbar-expand-lg sticky-top main-navbar" id="mainNavbar">
+        <div class="container-fluid px-lg-5">
+
+            <!-- 1. LEFT: School Logo & Name -->
+            <a class="navbar-brand" href="index.html" id="navbarBrandLink">
+                <img src="Mummy school badge.jpg" alt="Queens Blessed Standard Academy Badge" class="brand-logo-img">
+                <div class="brand-text-wrap text-start">
+                    <span class="brand-name">QUEENS BLESSED</span>
+                    <span class="brand-tagline">Standard Academy</span>
+                </div>
+            </a>
+
+            <!-- Mobile Action Cluster (Enroll button + Side Drawer Hamburger) -->
+            <div class="d-flex align-items-center gap-2 d-lg-none">
+                <button class="btn btn-enroll-nav btn-sm py-2 px-3" data-bs-toggle="modal"
+                    data-bs-target="#enrollmentModal">
+                    <i class="bi bi-pencil-square"></i>
+                    <span>Enroll</span>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSideNav"
+                    aria-controls="mobileSideNav" aria-label="Open navigation menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- 2. CENTER & 3. RIGHT (Horizontal on Desktop, Slide-In Drawer on Mobile) -->
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="mobileSideNav"
+                aria-labelledby="mobileSideNavLabel">
+
+                <!-- Side Drawer Header (Mobile Only) -->
+                <div class="offcanvas-header d-lg-none">
+                    <div class="d-flex align-items-center gap-2" id="mobileSideNavLabel">
+                        <img src="Mummy school badge.jpg" alt="Queens Blessed Standard Academy Logo"
+                            class="brand-logo-img" style="width: 44px; height: 44px;">
+                        <div class="brand-text-wrap text-start">
+                            <span class="brand-name text-white fs-6">QUEENS BLESSED</span>
+                            <span class="brand-tagline" style="font-size: 0.68rem;">Standard Academy</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        data-bs-target="#mobileSideNav" aria-label="Close"></button>
+                </div>
+
+                <!-- Nav Menu Content -->
+                <div class="offcanvas-body">
+
+                    <!-- Center Links: Multi-Page Navigation -->
+                    <ul class="navbar-nav mx-auto text-start text-lg-center gap-lg-1 mb-4 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <i class="bi bi-house-door-fill d-lg-none"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">
+                                <i class="bi bi-info-circle-fill d-lg-none"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="academics.html">
+                                <i class="bi bi-book-half d-lg-none"></i>
+                                <span>Academics</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chooseus.html">
+                                <i class="bi bi-star-fill d-lg-none"></i>
+                                <span>Why Choose Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">
+                                <i class="bi bi-telephone-fill d-lg-none"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Desktop Right: Enroll Now Button -->
+                    <div class="d-none d-lg-flex justify-content-end">
+                        <button class="btn btn-enroll-nav" data-bs-toggle="modal" data-bs-target="#enrollmentModal"
+                            id="enrollButtonDesktop">
+                            <i class="bi bi-pencil-square"></i>
+                            <span>Enroll Now</span>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Drawer Footer & CTA -->
+                    <div class="mobile-sidebar-footer d-lg-none mt-auto">
+                        <button class="btn btn-enroll-nav w-100 justify-content-center mb-3" data-bs-toggle="modal"
+                            data-bs-target="#enrollmentModal" data-bs-dismiss="offcanvas">
+                            <i class="bi bi-mortarboard-fill"></i> Enroll For 2026/2027
+                        </button>
+                        <div class="d-flex flex-column gap-2">
+                            <div><i class="bi bi-telephone-fill text-warning me-2"></i> +234 (0) 800 123 4567</div>
+                            <div><i class="bi bi-envelope-fill text-warning me-2"></i>
+                                admissions@queensblessedacademy.edu</div>
+                            <div><i class="bi bi-geo-alt-fill text-warning me-2"></i> Main Campus, Nigeria</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section with Realistic School Environment Images -->
+    <section class="hero-carousel-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1: Campus Exterior"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2: STEM Lab"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3: Sports & Athletics"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                    aria-label="Slide 4: Library & Mentorship"></button>
+            </div>
+
+            <!-- Slides Inner -->
+            <div class="carousel-inner">
+
+                <!-- Slide 1: Campus Building Exterior -->
+                <div class="carousel-item active">
+                    <img src="assets/images/hero-campus.jpg"
+                        alt="Queens Blessed Standard Academy Campus Building and Students">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption-container">
+                        <div class="hero-caption-card">
+                            <span class="hero-tag">
+                                <i class="bi bi-star-fill text-warning"></i> Welcome to Queens Blessed
+                            </span>
+                            <h1 class="hero-title">Nurturing Bright Minds & Future Leaders</h1>
+                            <p class="hero-subtitle">
+                                Laying solid academic foundations, sound moral discipline, and joyful learning that
+                                equip young learners to shine and achieve extraordinary success.
+                            </p>
+                            <div class="hero-btn-group">
+                                <button class="btn btn-hero-primary" data-bs-toggle="modal"
+                                    data-bs-target="#enrollmentModal">
+                                    <i class="bi bi-mortarboard-fill"></i> Enroll Your Child Today
+                                </button>
+                                <a href="academics.html" class="btn btn-hero-secondary">
+                                    <i class="bi bi-arrow-right-circle"></i> View Academic Levels
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: STEM & Science Lab -->
+                <div class="carousel-item">
+                    <img src="assets/images/hero-science.jpg"
+                        alt="Students conducting scientific practicals in the modern chemistry lab">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption-container">
+                        <div class="hero-caption-card">
+                            <span class="hero-tag">
+                                <i class="bi bi-cpu-fill text-warning"></i> Practical Science & ICT
+                            </span>
+                            <h2 class="hero-title">Inspiring Curiosity & Hands-On Discovery</h2>
+                            <p class="hero-subtitle">
+                                Science exploration, computer literacy, and interactive STEM classrooms that stimulate
+                                critical thinking and creativity across all grade levels.
+                            </p>
+                            <div class="hero-btn-group">
+                                <a href="academics.html" class="btn btn-hero-primary">
+                                    <i class="bi bi-book-half"></i> Our Curriculum
+                                </a>
+                                <a href="contactus.html" class="btn btn-hero-secondary">
+                                    <i class="bi bi-calendar-check"></i> Book a Campus Tour
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Sports, Athletics & Extracurriculars -->
+                <div class="carousel-item">
+                    <img src="assets/images/hero-sports.jpg"
+                        alt="Students engaging in sports on the green athletics field">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption-container">
+                        <div class="hero-caption-card">
+                            <span class="hero-tag">
+                                <i class="bi bi-trophy-fill text-warning"></i> Health, Sports & Character
+                            </span>
+                            <h2 class="hero-title">Active Playgrounds & Athletic Spirit</h2>
+                            <p class="hero-subtitle">
+                                From colorful recreation parks to football and track competitions, we foster wholesome
+                                fitness, teamwork, and healthy confidence.
+                            </p>
+                            <div class="hero-btn-group">
+                                <a href="chooseus.html" class="btn btn-hero-primary">
+                                    <i class="bi bi-dribbble"></i> Student Life & Facilities
+                                </a>
+                                <button class="btn btn-hero-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#enrollmentModal">
+                                    <i class="bi bi-pencil-fill"></i> Apply For Admission
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Library & Mentorship -->
+                <div class="carousel-item">
+                    <img src="assets/images/hero-library.jpg"
+                        alt="Dedicated teacher helping students study in the sunlit modern academy library">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption-container">
+                        <div class="hero-caption-card">
+                            <span class="hero-tag">
+                                <i class="bi bi-heart-fill text-warning"></i> Caring & Trained Educators
+                            </span>
+                            <h2 class="hero-title">Individualized Guidance for Every Child</h2>
+                            <p class="hero-subtitle">
+                                Compassionate teachers who understand child psychology, ensuring tailored support and
+                                mentorship for every learner.
+                            </p>
+                            <div class="hero-btn-group">
+                                <button class="btn btn-hero-primary" data-bs-toggle="modal"
+                                    data-bs-target="#enrollmentModal">
+                                    <i class="bi bi-award-fill"></i> Join Queens Blessed
+                                </button>
+                                <a href="contactus.html" class="btn btn-hero-secondary">
+                                    <i class="bi bi-chat-dots-fill"></i> Speak With Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls (Left & Right Arrows) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Key Feature Highlights (Overlapping Floating Cards) -->
+    <section class="feature-bar-section">
+        <div class="container px-lg-5">
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Solid Academic Rigor</h3>
+                        <p class="feature-desc">Comprehensive curriculum providing intensive academic training that
+                            thoroughly equips students with knowledge and mastery.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="feature-title">Early STEM & ICT</h3>
+                        <p class="feature-desc">Fostering computing, introductory coding, and basic sciences so
+                            youngsters build technological fluency early.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3 class="feature-title">Character & Discipline</h3>
+                        <p class="feature-desc">Instilling moral virtues, courtesy, responsibility, and empathy during
+                            the most formative childhood years.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Secure & Loving Campus</h3>
+                        <p class="feature-desc">A safe haven with dedicated child minders, hygienic play facilities, and
+                            constant supervised surveillance.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-section">
+        <div class="container px-lg-5">
+            <div class="row align-items-center g-5">
+
+                <!-- Left: Visual Column -->
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/hero-campus.jpg"
+                            alt="Students walking on Queens Blessed Standard Academy grounds">
+                        <div class="about-badge-card text-center">
+                            <div class="num">100%</div>
+                            <div class="label">Dedication to Child Success</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Content Column -->
+                <div class="col-lg-6">
+                    <span class="section-badge"><i class="bi bi-bookmark-star-fill"></i> About Our Academy</span>
+                    <h2 class="section-title">Forming Strong Foundations for Lifelong Success</h2>
+                    <p class="text-muted">
+                        At <strong>Queens Blessed Standard Academy</strong>, our focused mission is to provide an
+                        exemplary, well-rounded foundational education that nurtures each pupil academically, morally,
+                        and spiritually.
+                    </p>
+                    <p class="text-muted">
+                        By focusing intentionally on child-centered learning and solid basic education, we ensure each
+                        student receives the close personal attention, cognitive enrichment, and moral guidance needed
+                        to excel.
+                    </p>
+
+                    <ul class="about-check-list">
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span><strong>Montessori & Phonics Foundations:</strong> Fluent reading, comprehension, and
+                                numeracy established right from early childhood.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span><strong>Primary Cognitive Mastery:</strong> Strong problem-solving skills in
+                                Mathematics, Quantitative Reasoning, English, and Basic Sciences.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span><strong>Comprehensive Exam Preparation:</strong> Thorough academic training that
+                                equips students with the mastery to write and pass any external exams.</span>
+                        </li>
+                    </ul>
+
+                    <div class="pt-2 d-flex gap-3 align-items-center flex-wrap">
+                        <a href="aboutus.html" class="btn btn-hero-primary"
+                            style="background-color: var(--wine-red); color: white; border-color: var(--wine-red);">
+                            <i class="bi bi-info-circle-fill"></i> Read Full Story
+                        </a>
+                        <button class="btn btn-outline-wine" data-bs-toggle="modal" data-bs-target="#enrollmentModal">
+                            <i class="bi bi-mortarboard-fill"></i> Enroll Today
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Programs Section -->
+    <section class="academics-section">
+        <div class="container px-lg-5">
+            <div class="text-center mb-5">
+                <span class="section-badge"><i class="bi bi-mortarboard-fill"></i> Our Academic Structure</span>
+                <h2 class="section-title">Educational Levels</h2>
+                <p class="section-subtitle">Structured specifically for early learners, elementary pupils, and junior
+                    secondary students.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- 1. Kindergarten & Early Years -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <div class="program-card-header">
+                            <span class="program-grade-pill">Early Childhood</span>
+                            <h3 class="program-card-title">Kindergarten & Nursery</h3>
+                        </div>
+                        <div class="program-card-body">
+                            <p class="program-desc">A cheerful, sensory-rich environment fostering early phonics,
+                                vocabulary, arithmetic concepts, fine motor skills, and social sharing.</p>
+                            <ul class="program-features">
+                                <li><i class="bi bi-check2"></i> Jolly Phonics & Early Reading</li>
+                                <li><i class="bi bi-check2"></i> Numbers, Shapes & Sensory Math</li>
+                                <li><i class="bi bi-check2"></i> Safe, Colorful Indoor Play Area</li>
+                                <li><i class="bi bi-check2"></i> Loving Caregivers & Health Matrons</li>
+                            </ul>
+                            <a href="academics.html#kindergarten" class="btn btn-outline-wine w-100">
+                                Explore Kindergarten Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Primary School -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <div class="program-card-header">
+                            <span class="program-grade-pill">Basic Education</span>
+                            <h3 class="program-card-title">Primary School</h3>
+                        </div>
+                        <div class="program-card-body">
+                            <p class="program-desc">Building strong intellectual curiosity, quantitative analytical
+                                thinking, creative writing, elementary science, and ICT literacy.</p>
+                            <ul class="program-features">
+                                <li><i class="bi bi-check2"></i> Advanced Mathematics & English</li>
+                                <li><i class="bi bi-check2"></i> Basic Science & Technology</li>
+                                <li><i class="bi bi-check2"></i> Computer Suite & Digital Skills</li>
+                                <li><i class="bi bi-check2"></i> Common Entrance Examination Prep</li>
+                            </ul>
+                            <a href="academics.html#primary" class="btn btn-outline-wine w-100">
+                                Explore Primary Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Junior Secondary School -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <div class="program-card-header">
+                            <span class="program-grade-pill">Junior Secondary</span>
+                            <h3 class="program-card-title">Junior Secondary School</h3>
+                        </div>
+                        <div class="program-card-body">
+                            <p class="program-desc">Academic excellence and moral training bridging elementary school
+                                and senior high, training students thoroughly for all junior certifications.</p>
+                            <ul class="program-features">
+                                <li><i class="bi bi-check2"></i> Rigorous Academic Training & Mock Drills</li>
+                                <li><i class="bi bi-check2"></i> Integrated Sciences & Pre-vocational Studies</li>
+                                <li><i class="bi bi-check2"></i> Business Studies, French & Music</li>
+                                <li><i class="bi bi-check2"></i> Youth Leadership & Debate Societies</li>
+                            </ul>
+                            <a href="academics.html#jss" class="btn btn-outline-wine w-100">
+                                Explore Junior Secondary Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="academics.html" class="btn btn-hero-primary"
+                    style="background-color: var(--wine-red); color: white; border-color: var(--wine-red);">
+                    <i class="bi bi-mortarboard-fill"></i> View Complete Curriculum & Subjects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-bar-section">
+        <div class="container px-lg-5">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Academic Success Rate</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">12:1</div>
+                        <div class="stat-label">Pupil-Teacher Ratio</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Qualified Teachers</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Clubs & Sports</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Queens Blessed Section -->
+    <section class="values-section">
+        <div class="container px-lg-5">
+            <div class="text-center mb-5">
+                <span class="section-badge"><i class="bi bi-gem"></i> The Queens Blessed Advantage</span>
+                <h2 class="section-title">Why Parents Trust Us</h2>
+                <p class="section-subtitle">We go beyond textbooks to instill deep critical comprehension, unshakeable
+                    self-esteem, and moral leadership.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-box">
+                        <h4 class="value-box-title"><i class="bi bi-heart-pulse-fill"></i> Close Caring Guidance</h4>
+                        <p class="value-box-text">Small, interactive classes where every child is personally known,
+                            cherished, and encouraged to excel.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-box">
+                        <h4 class="value-box-title"><i class="bi bi-shield-lock-fill"></i> Unrivaled Child Security</h4>
+                        <p class="value-box-text">Gated campus, trained security officers, perimeter safeguards, and
+                            strictly verified child pickups.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-box">
+                        <h4 class="value-box-title"><i class="bi bi-award-fill"></i> Proven Academic Excellence</h4>
+                        <p class="value-box-text">Rigorous continuous training that builds subject mastery and equips
+                            children to excel in external exams.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-box">
+                        <h4 class="value-box-title"><i class="bi bi-laptop-fill"></i> Digital Literacy</h4>
+                        <p class="value-box-text">Pupils learn keyboarding, creative presentation, and computer
+                            fundamentals right from early grades.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-box">
+                        <h4 class="value-box-title"><i class="bi bi-cash-coin"></i> Fair & Transparent Fees</h4>
+                        <p class="value-box-text">Exceptional educational quality delivered at reasonable tuition rates
+                            with convenient payment plans.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-box">
+                        <h4 class="value-box-title"><i class="bi bi-people-fill"></i> Vibrant Parent Community</h4>
+                        <p class="value-box-text">Continuous feedback, frequent teacher updates, and supportive PTA
+                            partnership in every child's growth.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="chooseus.html" class="btn btn-outline-wine">
+                    <i class="bi bi-arrow-right-circle me-1"></i> Learn More About Why You Should Choose Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission CTA Banner -->
+    <section class="cta-banner-section text-center">
+        <div class="container px-lg-5">
+            <span class="badge-admissions mb-3 d-inline-block"><i class="bi bi-calendar-event me-1"></i> Admissions 2026
+                / 2027 Ongoing</span>
+            <h2 class="cta-title">Give Your Child a Head Start in Education</h2>
+            <p class="cta-desc mx-auto">Limited vacancies available. Enroll now to secure your child's placement with
+                Queens Blessed Standard Academy.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button class="btn btn-cta-gold" data-bs-toggle="modal" data-bs-target="#enrollmentModal">
+                    <i class="bi bi-pencil-fill"></i> Apply For Admission Online
+                </button>
+                <a href="contactus.html" class="btn btn-hero-secondary">
+                    <i class="bi bi-geo-alt-fill"></i> Visit Our Campus
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container px-lg-5">
+            <div class="row g-5">
+
+                <!-- School Info -->
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="Mummy school badge.jpg" alt="Logo" class="rounded-circle border border-white"
+                            style="width: 46px; height: 46px; object-fit: cover;">
+                        <div>
+                            <div class="footer-brand-title">QUEENS BLESSED</div>
+                            <div class="text-uppercase small"
+                                style="color: var(--accent-gold-light); font-size: 0.75rem; letter-spacing: 1px;">
+                                Standard Academy</div>
+                        </div>
+                    </div>
+                    <p class="footer-about">
+                        Committed to providing holistic foundational education, moral excellence, and personal
+                        mentorship for every learner.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation Links -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Pages</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+                        <li><a href="aboutus.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+                        <li><a href="academics.html"><i class="bi bi-chevron-right small"></i> Academics</a></li>
+                        <li><a href="chooseus.html"><i class="bi bi-chevron-right small"></i> Why Choose Us</a></li>
+                        <li><a href="contactus.html"><i class="bi bi-chevron-right small"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Classes -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Classes</h5>
+                    <ul class="footer-links">
+                        <li><a href="academics.html#kindergarten"><i class="bi bi-chevron-right small"></i> Kindergarten
+                                1 & 2</a></li>
+                        <li><a href="academics.html#primary"><i class="bi bi-chevron-right small"></i> Lower Primary (1
+                                - 3)</a></li>
+                        <li><a href="academics.html#primary"><i class="bi bi-chevron-right small"></i> Upper Primary (4
+                                - 6)</a></li>
+                        <li><a href="academics.html#jss"><i class="bi bi-chevron-right small"></i> JSS 1 (Basic 7)</a>
+                        </li>
+                        <li><a href="academics.html#jss"><i class="bi bi-chevron-right small"></i> JSS 2 & 3</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Contact Admissions</h5>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Queens Blessed Standard Academy Campus, Nigeria</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+234 (0) 800 123 4567 / +234 803 000 0000</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>admissions@queensblessedacademy.edu</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-clock-fill"></i>
+                        <span>Mon - Fri: 7:30 AM - 4:30 PM</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <div>
+                    &copy; <span id="currentYear">2026</span> Queens Blessed Standard Academy. All Rights Reserved.
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="index.html" class="text-white-50 text-decoration-none">Back to Top <i
+                            class="bi bi-arrow-up-circle ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Enrollment Modal -->
+    <div class="modal fade" id="enrollmentModal" tabindex="-1" aria-labelledby="enrollmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-wine">
+                    <div>
+                        <h4 class="modal-title font-heading fw-bold" id="enrollmentModalLabel">
+                            <i class="bi bi-mortarboard-fill me-2"></i> Enroll Your Child
+                        </h4>
+                        <p class="small text-white-50 mb-0">Fill in the admission inquiry form and our school registrar
+                            will contact you promptly.</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enrollmentForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Parent / Guardian Full Name *</label>
+                                <input type="text" class="form-control" placeholder="e.g. Dr. / Mr. / Mrs. Adeleke"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" placeholder="e.g. 0801 234 5678" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" placeholder="parent@email.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Child / Pupil Full Name *</label>
+                                <input type="text" class="form-control" placeholder="Candidate's Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Child's Date of Birth *</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Class Applying For *</label>
+                                <select class="form-select" required>
+                                    <option value="" selected disabled>Select Target Class</option>
+                                    <optgroup label="Early Years">
+                                        <option value="creche">Creche / Playgroup</option>
+                                        <option value="kg1">Kindergarten 1 (KG 1)</option>
+                                        <option value="kg2">Kindergarten 2 (KG 2)</option>
+                                    </optgroup>
+                                    <optgroup label="Primary School">
+                                        <option value="pri1">Primary 1 (Basic 1)</option>
+                                        <option value="pri2">Primary 2 (Basic 2)</option>
+                                        <option value="pri3">Primary 3 (Basic 3)</option>
+                                        <option value="pri4">Primary 4 (Basic 4)</option>
+                                        <option value="pri5">Primary 5 (Basic 5)</option>
+                                        <option value="pri6">Primary 6 (Basic 6)</option>
+                                    </optgroup>
+                                    <optgroup label="Junior Secondary School">
+                                        <option value="jss1">JSS 1 (Basic 7)</option>
+                                        <option value="jss2">JSS 2 (Basic 8)</option>
+                                        <option value="jss3">JSS 3 (Basic 9)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Special Talents, Interests or Remarks</label>
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Tell us about your child's personality, interests, or any specific learning requirements..."></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-submit-enroll py-3">
+                                    <i class="bi bi-check-circle-fill me-2"></i> Submit Enrollment Application
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Interactive JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('mainNavbar');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 30) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            const yearElem = document.getElementById('currentYear');
+            if (yearElem) {
+                yearElem.textContent = new Date().getFullYear();
+            }
+
+            const enrollmentForm = document.getElementById('enrollmentForm');
+            if (enrollmentForm) {
+                enrollmentForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const modalElement = document.getElementById('enrollmentModal');
+                    const modalInstance = bootstrap.Modal.getInstance(modalElement);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                    alert('🎉 Thank you for submitting your enrollment application for Queens Blessed Standard Academy!\n\nOur Admissions Officer will review your submission and contact you within 24 hours with the admission pack.');
+                    enrollmentForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
