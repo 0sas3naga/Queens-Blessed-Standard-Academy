@@ -497,8 +497,8 @@
             <div class="modal-content">
                 <div class="modal-header modal-header-wine">
                     <div>
-                        <h4 class="modal-title font-heading fw-bold" id="enrollmentModalLabel">
-                            <i class="bi bi-mortarboard-fill me-2"></i> Enroll Your Child
+                        <h4 class="modal-title font-heading fw-bold text-white" id="enrollmentModalLabel">
+                            <i class="bi bi-mortarboard-fill me-2 text-warning"></i> Enroll Your Child
                         </h4>
                         <p class="small text-white-50 mb-0">Fill in the admission inquiry form and our school registrar
                             will contact you promptly.</p>
@@ -509,58 +509,78 @@
                     <form id="enrollmentForm">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Parent / Guardian Full Name *</label>
-                                <input type="text" class="form-control" placeholder="e.g. Dr. / Mr. / Mrs. Adeleke"
-                                    required>
+                                <label class="form-label" for="enrollParentName">Parent / Guardian Full Name *</label>
+                                <input type="text" name="parent_name" id="enrollParentName" class="form-control"
+                                    placeholder="e.g. Dr. / Mr. / Mrs. Adeleke" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Phone Number *</label>
-                                <input type="tel" class="form-control" placeholder="e.g. 0801 234 5678" required>
+                                <label class="form-label" for="enrollPhone">Phone Number *</label>
+                                <input type="tel" name="phone" id="enrollPhone" class="form-control"
+                                    placeholder="e.g. 0801 234 5678" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Email Address *</label>
-                                <input type="email" class="form-control" placeholder="parent@email.com" required>
+                                <label class="form-label" for="enrollEmail">Email Address <span class="text-muted fw-normal small">(Optional)</span></label>
+                                <input type="email" name="email" id="enrollEmail" class="form-control"
+                                    placeholder="parent@email.com">
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Child / Pupil Full Name *</label>
-                                <input type="text" class="form-control" placeholder="Candidate's Name" required>
+                                <label class="form-label" for="enrollChildName">Child / Pupil Full Name *</label>
+                                <input type="text" name="child_name" id="enrollChildName" class="form-control"
+                                    placeholder="Candidate's Name" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Child's Date of Birth *</label>
-                                <input type="date" class="form-control" required>
+                                <label class="form-label" for="enrollDob">Child's Date of Birth *</label>
+                                <input type="date" name="dob" id="enrollDob" class="form-control" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Class Applying For () *</label>
-                                <select class="form-select" required>
+                                <label class="form-label" for="enrollClass">Class Applying For *</label>
+                                <select name="class_applying" id="enrollClass" class="form-select" required>
                                     <option value="" selected disabled>Select Target Class</option>
                                     <optgroup label="Early Years">
-                                        <option value="creche">Creche / Playgroup</option>
-                                        <option value="kg1">Kindergarten 1 </option>
-                                        <option value="kg2">Kindergarten 2 </option>
+                                        <option value="Creche / Playgroup">Creche / Playgroup</option>
+                                        <option value="Kindergarten 1 (KG 1)">Kindergarten 1 (KG 1)</option>
+                                        <option value="Kindergarten 2 (KG 2)">Kindergarten 2 (KG 2)</option>
                                     </optgroup>
                                     <optgroup label="Primary School">
-                                        <option value="pri1">Primary 1</option>
-                                        <option value="pri2">Primary 2</option>
-                                        <option value="pri3">Primary 3</option>
-                                        <option value="pri4">Primary 4</option>
-                                        <option value="pri5">Primary 5</option>
-                                        <option value="pri6">Primary 6</option>
+                                        <option value="Primary 1 (Basic 1)">Primary 1 (Basic 1)</option>
+                                        <option value="Primary 2 (Basic 2)">Primary 2 (Basic 2)</option>
+                                        <option value="Primary 3 (Basic 3)">Primary 3 (Basic 3)</option>
+                                        <option value="Primary 4 (Basic 4)">Primary 4 (Basic 4)</option>
+                                        <option value="Primary 5 (Basic 5)">Primary 5 (Basic 5)</option>
+                                        <option value="Primary 6 (Basic 6)">Primary 6 (Basic 6)</option>
                                     </optgroup>
                                     <optgroup label="Junior Secondary School">
-                                        <option value="jss1">JSS 1</option>
-                                        <option value="jss2">JSS 2 (Basic 8)</option>
-                                        <option value="jss3">JSS 3 (Basic 9 / BECE Candidate)</option>
+                                        <option value="JSS 1 (Basic 7)">JSS 1 (Basic 7)</option>
+                                        <option value="JSS 2 (Basic 8)">JSS 2 (Basic 8)</option>
+                                        <option value="JSS 3 (Basic 9)">JSS 3 (Basic 9)</option>
                                     </optgroup>
                                 </select>
                             </div>
                             <div class="col-12">
-                                <label class="form-label">Special Talents, Interests or Remarks</label>
-                                <textarea class="form-control" rows="3"
+                                <label class="form-label" for="enrollRemarks">Special Talents, Interests or Remarks</label>
+                                <textarea name="remarks" id="enrollRemarks" class="form-control" rows="3"
                                     placeholder="Tell us about your child's personality, interests, or any specific learning requirements..."></textarea>
                             </div>
-                            <div class="col-12 mt-4">
+                            <div class="col-12">
+                                <label class="form-label small text-muted">Forward Application to Admissions WhatsApp Desk:</label>
+                                <div class="d-flex flex-wrap gap-3 p-2 rounded bg-light border">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="whatsapp_dest" id="waDesk1_acad" value="2347061542613" checked>
+                                        <label class="form-check-label small fw-semibold text-dark" for="waDesk1_acad">
+                                            <i class="bi bi-whatsapp text-success me-1"></i> Admissions Line 1: 07061542613
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="whatsapp_dest" id="waDesk2_acad" value="2348101159495">
+                                        <label class="form-check-label small fw-semibold text-dark" for="waDesk2_acad">
+                                            <i class="bi bi-whatsapp text-success me-1"></i> Admissions Line 2: 08101159495
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
                                 <button type="submit" class="btn btn-submit-enroll py-3">
-                                    <i class="bi bi-check-circle-fill me-2"></i> Submit Enrollment Application
+                                    <i class="bi bi-whatsapp me-2 fs-5"></i> Submit Enrollment via WhatsApp
                                 </button>
                             </div>
                         </div>
@@ -581,6 +601,64 @@
             });
             const yearElem = document.getElementById('currentYear');
             if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+            const enrollmentForm = document.getElementById('enrollmentForm');
+            if (enrollmentForm) {
+                enrollmentForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const parentName = enrollmentForm.querySelector('[name="parent_name"]')?.value.trim() || '';
+                    const phone = enrollmentForm.querySelector('[name="phone"]')?.value.trim() || '';
+                    const email = enrollmentForm.querySelector('[name="email"]')?.value.trim() || '';
+                    const childName = enrollmentForm.querySelector('[name="child_name"]')?.value.trim() || '';
+                    const dob = enrollmentForm.querySelector('[name="dob"]')?.value || '';
+                    const classSelect = enrollmentForm.querySelector('[name="class_applying"]');
+                    const classApplying = classSelect ? (classSelect.options[classSelect.selectedIndex]?.text || classSelect.value) : '';
+                    const remarks = enrollmentForm.querySelector('[name="remarks"]')?.value.trim() || '';
+                    const chosenNum = enrollmentForm.querySelector('input[name="whatsapp_dest"]:checked')?.value || '2347061542613';
+                    const altNum = chosenNum === '2347061542613' ? '2348101159495' : '2347061542613';
+                    const altDisplay = chosenNum === '2347061542613' ? '08101159495' : '07061542613';
+
+                    const messageLines = [
+                        "🎓 *NEW ENROLLMENT INQUIRY*",
+                        "*Queens Blessed Standard Academy*",
+                        "------------------------------------",
+                        `*Parent/Guardian:* ${parentName}`,
+                        `*Phone Number:* ${phone}`,
+                        `*Email Address:* ${email ? email : 'Not provided'}`,
+                        `*Child's Full Name:* ${childName}`,
+                        `*Date of Birth:* ${dob}`,
+                        `*Class Applying For:* ${classApplying}`,
+                        remarks ? `*Special Talents / Remarks:* ${remarks}` : null,
+                        "------------------------------------",
+                        "📍 _Sent via Queens Blessed Standard Academy online portal._"
+                    ].filter(Boolean).join("\n");
+
+                    const encodedMsg = encodeURIComponent(messageLines);
+                    const primaryUrl = `https://wa.me/${chosenNum}?text=${encodedMsg}`;
+                    const altUrl = `https://wa.me/${altNum}?text=${encodedMsg}`;
+
+                    const modalElement = document.getElementById('enrollmentModal');
+                    if (modalElement && window.bootstrap) {
+                        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+                    }
+
+                    // Open chosen WhatsApp line
+                    window.open(primaryUrl, '_blank');
+
+                    // Offer to send to the alternate line
+                    setTimeout(function () {
+                        if (confirm("Your enrollment information has been opened in WhatsApp!\n\nWould you also like to forward a copy to our secondary Admissions line (" + altDisplay + ")?")) {
+                            window.open(altUrl, '_blank');
+                        }
+                    }, 600);
+
+                    enrollmentForm.reset();
+                });
+            }
         });
     </script>
 </body>

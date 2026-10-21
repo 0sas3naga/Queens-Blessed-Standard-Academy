@@ -1169,8 +1169,21 @@ h6,
     border: none;
 }
 
+.modal-header-wine .modal-title {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+    font-size: 1.45rem !important;
+    letter-spacing: 0.3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header-wine .modal-title i {
+    color: var(--accent-gold-light) !important;
+}
+
 .modal-header-wine .btn-close {
     filter: invert(1);
+    opacity: 0.9;
 }
 
 .modal-body {
